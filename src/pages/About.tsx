@@ -16,7 +16,7 @@ const About = () => {
               The Melissa & Jason Scholarship Fund was established to honor the memory and values 
               of two remarkable individuals who deeply believed in the transformative power of 
               education. Our mission is to provide financial support and recognition to outstanding 
-              students at BHS who demonstrate academic excellence, leadership, and a commitment to 
+              students at Brighton High School who demonstrate academic excellence, leadership, and a commitment to 
               community service.
             </p>
             <p className="text-lg text-gray-700">

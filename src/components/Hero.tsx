@@ -8,7 +8,7 @@ const Hero = () => {
           Melissa & Jason Scholarship Fund
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-200">
-          Supporting outstanding students at BHS through annual scholarships
+          Supporting outstanding students at Brighton High School through annual scholarships
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

@@ -16,7 +16,7 @@ const Eligibility = () => {
               The Melissa & Jason Scholarship is open to students who meet the following criteria:
             </p>
             <ul className="list-disc pl-6 space-y-3 text-lg text-gray-700 mb-6">
-              <li>Current high school seniors graduating from BHS</li>
+              <li>Current high school seniors graduating from Brighton High School</li>
               <li>Planning to enroll in an accredited college, university, or trade school</li>
               <li>Demonstrated financial need (preferred but not required)</li>
               <li>Legal residents of the United States</li>

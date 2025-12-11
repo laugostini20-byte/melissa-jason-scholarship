@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="mb-4 md:mb-0">
             <h3 className="text-xl font-bold mb-2">Melissa & Jason Scholarship Fund</h3>
             <p className="text-sm text-gray-300">
-              Supporting outstanding students at BHS through annual scholarships
+              Supporting outstanding students at Brighton High School through annual scholarships
             </p>
           </div>
           <div className="flex flex-col md:flex-row gap-4 text-sm">

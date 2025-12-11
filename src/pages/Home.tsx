@@ -18,7 +18,7 @@ const Home = () => {
             <p className="text-lg text-gray-700 mb-4">
               The Melissa & Jason Scholarship Fund was established to honor the memory of two 
               extraordinary individuals who believed deeply in the power of education to transform 
-              lives. Our mission is to support outstanding students at BHS by providing annual 
+              lives. Our mission is to support outstanding students at Brighton High School by providing annual 
               scholarships that recognize academic excellence, leadership, and community service.
             </p>
             <p className="text-lg text-gray-700 mb-8">

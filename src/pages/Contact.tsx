@@ -29,31 +29,31 @@ const Contact = () => {
         subtitle="Get in touch with us"
       />
       
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
         <div className="max-w-3xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12">
             <div>
-              <h2 className="text-2xl font-bold mb-6 text-navy">Get in Touch</h2>
-              <p className="text-lg text-gray-700 mb-6">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-navy">Get in Touch</h2>
+              <p className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6">
                 Have a question about the scholarship? Want to learn more about how you can 
                 get involved? We'd love to hear from you.
               </p>
               <div className="space-y-4">
                 <div>
-                  <h3 className="font-semibold text-navy mb-2">Email</h3>
-                  <a href="mailto:info@melissa-jason-scholarship.org" className="text-gold hover:text-gold/80">
+                  <h3 className="text-sm sm:text-base font-semibold text-navy mb-2">Email</h3>
+                  <a href="mailto:info@melissa-jason-scholarship.org" className="text-sm sm:text-base text-gold hover:text-gold/80 break-all">
                     info@melissa-jason-scholarship.org
                   </a>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-navy mb-2">Phone</h3>
-                  <a href="tel:+1234567890" className="text-gray-700 hover:text-navy">
+                  <h3 className="text-sm sm:text-base font-semibold text-navy mb-2">Phone</h3>
+                  <a href="tel:+1234567890" className="text-sm sm:text-base text-gray-700 hover:text-navy">
                     (123) 456-7890
                   </a>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-navy mb-2">Mailing Address</h3>
-                  <p className="text-gray-700">
+                  <h3 className="text-sm sm:text-base font-semibold text-navy mb-2">Mailing Address</h3>
+                  <p className="text-sm sm:text-base text-gray-700">
                     Melissa & Jason Scholarship Fund<br />
                     [Address Line 1]<br />
                     [City, State ZIP Code]
@@ -63,8 +63,8 @@ const Contact = () => {
             </div>
 
             <div>
-              <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md">
-                <h2 className="text-2xl font-bold mb-6 text-navy">Send us a Message</h2>
+              <form onSubmit={handleSubmit} className="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+                <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-navy">Send us a Message</h2>
                 <div className="space-y-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
@@ -110,7 +110,7 @@ const Contact = () => {
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy/90 transition-colors"
+                    className="w-full bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy/90 transition-colors text-base sm:text-lg"
                   >
                     Send Message
                   </button>

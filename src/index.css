@@ -7,3 +7,11 @@
     @apply bg-light-gray text-gray-900;
   }
 }
+
+@layer utilities {
+  /* Ensure touch targets are at least 44x44px for mobile accessibility */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Jane Doe",
+    "year": 2023,
+    "description": "Awarded for outstanding leadership and community service. Jane demonstrated exceptional commitment to volunteering and academic excellence throughout her high school career.",
+    "photo": "/placeholder.jpg"
+  },
+  {
+    "name": "John Smith",
+    "year": 2023,
+    "description": "Recipient recognized for academic achievement and dedication to mentorship. John served as a peer tutor and maintained a strong GPA while participating in multiple extracurricular activities.",
+    "photo": "/placeholder.jpg"
+  },
+  {
+    "name": "Sarah Johnson",
+    "year": 2023,
+    "description": "Awarded for excellence in both academics and athletics. Sarah balanced her studies with varsity sports while maintaining a commitment to community service.",
+    "photo": "/placeholder.jpg"
+  },
+  {
+    "name": "Michael Chen",
+    "year": 2022,
+    "description": "Recipient honored for innovation in STEM and leadership in the science club. Michael's research projects and community outreach made a significant impact.",
+    "photo": "/placeholder.jpg"
+  },
+  {
+    "name": "Emily Rodriguez",
+    "year": 2022,
+    "description": "Awarded for dedication to social justice and community organizing. Emily founded several student initiatives focused on equity and inclusion.",
+    "photo": "/placeholder.jpg"
+  },
+  {
+    "name": "David Kim",
+    "year": 2022,
+    "description": "Recipient recognized for artistic excellence and community engagement. David used his talents in music and visual arts to bring people together.",
+    "photo": "/placeholder.jpg"
+  },
+  {
+    "name": "Amanda Taylor",
+    "year": 2021,
+    "description": "Awarded for academic excellence and perseverance. Amanda overcame significant challenges while maintaining high academic standards and helping others.",
+    "photo": "/placeholder.jpg"
+  },
+  {
+    "name": "Robert Williams",
+    "year": 2021,
+    "description": "Recipient honored for leadership in student government and community service. Robert organized numerous school-wide events and volunteer initiatives.",
+    "photo": "/placeholder.jpg"
+  }
+]
+

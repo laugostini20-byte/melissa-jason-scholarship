@@ -26,8 +26,12 @@ const Donate = () => {
           <div className="bg-white p-6 sm:p-8 rounded-lg shadow-md mb-6 sm:mb-8">
             <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center text-navy">Donate via QR Code</h2>
             <div className="flex flex-col items-center">
-              <div className="w-48 h-48 sm:w-64 sm:h-64 bg-gray-200 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
-                <span className="text-gray-400 text-sm sm:text-lg">QR Code Placeholder</span>
+              <div className="w-48 h-48 sm:w-64 sm:h-64 rounded-lg mb-4 sm:mb-6 flex items-center justify-center">
+                <img 
+                  src="/qr-code.png" 
+                  alt="Donation QR Code" 
+                  className="w-full h-full object-contain rounded-lg"
+                />
               </div>
               <p className="text-sm sm:text-base text-gray-600 mb-4">Scan this QR code with your mobile device to donate</p>
             </div>

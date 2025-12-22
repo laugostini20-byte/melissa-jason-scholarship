@@ -134,8 +134,12 @@ const Home = () => {
               Every contribution makes a difference in a student's educational journey.
             </p>
             <div className="bg-light-gray p-6 sm:p-8 rounded-lg mb-6">
-              <div className="w-40 h-40 sm:w-48 sm:h-48 mx-auto bg-gray-200 rounded flex items-center justify-center mb-4">
-                <span className="text-gray-400 text-sm sm:text-base">QR Code</span>
+              <div className="w-40 h-40 sm:w-48 sm:h-48 mx-auto rounded flex items-center justify-center mb-4">
+                <img 
+                  src="/qr-code.png" 
+                  alt="Donation QR Code" 
+                  className="w-full h-full object-contain rounded"
+                />
               </div>
               <p className="text-sm text-gray-600 mb-4">Scan to donate</p>
             </div>

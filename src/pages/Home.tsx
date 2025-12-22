@@ -43,7 +43,7 @@ const Home = () => {
                 </div>
                 <div className="rounded-lg overflow-hidden shadow-md aspect-square">
                   <img 
-                    src="/image2.png" 
+                    src="/image4.png" 
                     alt="Melissa and Jason" 
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />

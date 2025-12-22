@@ -51,6 +51,7 @@ const Header = () => {
                 <Link to="/apply" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>Apply</Link>
                 <Link to="/donate" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>Donate</Link>
                 <Link to="/recipients" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>Recipients</Link>
+                <Link to="/donors" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>Donors</Link>
                 <Link to="/events" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>Events</Link>
                 <Link to="/faq" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>FAQ</Link>
                 <Link to="/contact" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>Contact</Link>

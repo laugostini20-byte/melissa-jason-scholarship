@@ -16,3 +16,10 @@ export interface FAQItem {
   answer: string;
 }
 
+export interface Donor {
+  name: string;
+  tier: string;
+  amount: string;
+  description: string;
+}
+

@@ -2,10 +2,12 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import recipientsData from '../data/recipients.json';
 import eventsData from '../data/events.json';
+import donorsData from '../data/donors.json';
 
 const Home = () => {
   const recentRecipients = recipientsData.slice(0, 3);
   const upcomingEvent = eventsData[0];
+  const topDonors = donorsData.slice(0, 6);
 
   return (
     <div>
@@ -83,6 +85,46 @@ const Home = () => {
               className="inline-block bg-gold text-navy px-6 py-3 rounded-lg font-semibold hover:bg-gold/90 transition-colors text-base sm:text-lg"
             >
               View All Recipients
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-8 sm:py-12 md:py-16 px-4 bg-white">
+        <div className="container mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">Our Top Donors</h2>
+          <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8 text-center max-w-3xl mx-auto px-4">
+            We are grateful to our generous donors who make these scholarships possible. 
+            Their support helps students achieve their educational dreams.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
+            {topDonors && topDonors.length > 0 ? (
+              topDonors.map((donor, index) => (
+                <div key={index} className="bg-light-gray p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                  <h3 className="text-lg sm:text-xl font-semibold text-navy mb-2">{donor.name}</h3>
+                  <p className="text-sm sm:text-base text-gold font-semibold mb-3">{donor.amount}</p>
+                  <p className="text-sm sm:text-base text-gray-700">{donor.description}</p>
+                </div>
+              ))
+            ) : (
+              <p className="text-gray-600 col-span-full text-center">No donors to display at this time.</p>
+            )}
+          </div>
+          <div className="text-center">
+            <Link
+              to="/donors"
+              className="inline-block bg-gold text-navy px-6 py-3 rounded-lg font-semibold hover:bg-gold/90 transition-colors text-base sm:text-lg mb-4"
+            >
+              View All Donors
+            </Link>
+            <p className="text-sm sm:text-base text-gray-600 mb-4">
+              Want to join our community of supporters?
+            </p>
+            <Link
+              to="/donate"
+              className="inline-block bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy/90 transition-colors text-base sm:text-lg"
+            >
+              Become a Donor
             </Link>
           </div>
         </div>

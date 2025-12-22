@@ -10,6 +10,7 @@ import Recipients from './pages/Recipients';
 import Events from './pages/Events';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
+import Donors from './pages/Donors';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/apply" element={<Apply />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/recipients" element={<Recipients />} />
+            <Route path="/donors" element={<Donors />} />
             <Route path="/events" element={<Events />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/contact" element={<Contact />} />

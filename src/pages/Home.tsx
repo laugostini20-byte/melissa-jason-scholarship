@@ -33,19 +33,19 @@ const Home = () => {
                   </Link>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="rounded-lg overflow-hidden shadow-md">
+              <div className="grid grid-cols-2 gap-4 self-start">
+                <div className="rounded-lg overflow-hidden shadow-md aspect-square">
                   <img 
                     src="/image1.png" 
                     alt="Melissa and Jason" 
-                    className="w-full h-48 sm:h-56 object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="rounded-lg overflow-hidden shadow-md">
+                <div className="rounded-lg overflow-hidden shadow-md aspect-square">
                   <img 
                     src="/image2.png" 
                     alt="Melissa and Jason" 
-                    className="w-full h-48 sm:h-56 object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </div>

@@ -33,25 +33,25 @@ const About = () => {
           <section className="mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-navy">Remembering Melissa & Jason</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-6">
-              <div className="rounded-lg overflow-hidden shadow-md">
+              <div className="rounded-lg overflow-hidden shadow-md aspect-[4/3]">
                 <img 
                   src="/image1.png" 
                   alt="Melissa and Jason" 
-                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="rounded-lg overflow-hidden shadow-md">
+              <div className="rounded-lg overflow-hidden shadow-md aspect-[4/3]">
                 <img 
                   src="/image2.png" 
                   alt="Melissa and Jason" 
-                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="rounded-lg overflow-hidden shadow-md">
+              <div className="rounded-lg overflow-hidden shadow-md aspect-[4/3]">
                 <img 
                   src="/image3.png" 
                   alt="Melissa and Jason" 
-                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>

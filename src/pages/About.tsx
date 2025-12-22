@@ -35,7 +35,7 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-6">
               <div className="rounded-lg overflow-hidden shadow-md aspect-[4/3]">
                 <img 
-                  src="/image1.png" 
+                  src="/image5.png" 
                   alt="Melissa and Jason" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />

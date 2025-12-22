@@ -13,9 +13,7 @@ const About = () => {
           <section className="mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-navy">Our Mission</h2>
             <p className="text-base sm:text-lg text-gray-700 mb-4">
-              The Melissa & Jason Scholarship Fund was established to honor the memory and values 
-              of two remarkable individuals who deeply believed in the transformative power of 
-              education. Our mission is to honor the lives of Melissa Klotz and Jason Pollack by supporting Brighton High School students who embody the kindness, strength, and spark that defined them. Through this scholarship, we carry their light forward and help the next generation thrive in the community they loved.
+              Our mission is to honor the lives of Melissa Klotz and Jason Pollack by supporting Brighton High School students who embody the kindness, strength, and spark that defined them. Through this scholarship, we carry their light forward and help the next generation thrive in the community they loved.
             </p>
           </section>
 

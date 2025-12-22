@@ -40,24 +40,25 @@ const Contact = () => {
               </p>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-sm sm:text-base font-semibold text-navy mb-2">Email</h3>
+                  <h3 className="text-sm sm:text-base font-semibold text-navy mb-2">For Nominations</h3>
+                  <p className="text-sm sm:text-base text-gray-700 mb-2">
+                    To nominate yourself or someone else for the scholarship:
+                  </p>
+                  <a href="mailto:Matt_Comeau@bcsd.org" className="text-sm sm:text-base text-gold hover:text-gold/80 break-all font-semibold">
+                    Matt_Comeau@bcsd.org
+                  </a>
+                </div>
+                <div>
+                  <h3 className="text-sm sm:text-base font-semibold text-navy mb-2">General Inquiries</h3>
                   <a href="mailto:info@melissa-jason-scholarship.org" className="text-sm sm:text-base text-gold hover:text-gold/80 break-all">
                     info@melissa-jason-scholarship.org
                   </a>
                 </div>
                 <div>
-                  <h3 className="text-sm sm:text-base font-semibold text-navy mb-2">Phone</h3>
-                  <a href="tel:+1234567890" className="text-sm sm:text-base text-gray-700 hover:text-navy">
-                    (123) 456-7890
+                  <h3 className="text-sm sm:text-base font-semibold text-navy mb-2">Website</h3>
+                  <a href="https://www.melissajasonscholarship.org" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base text-gold hover:text-gold/80 break-all">
+                    www.melissajasonscholarship.org
                   </a>
-                </div>
-                <div>
-                  <h3 className="text-sm sm:text-base font-semibold text-navy mb-2">Mailing Address</h3>
-                  <p className="text-sm sm:text-base text-gray-700">
-                    Melissa & Jason Scholarship Fund<br />
-                    [Address Line 1]<br />
-                    [City, State ZIP Code]
-                  </p>
                 </div>
               </div>
             </div>

@@ -13,14 +13,11 @@ const Eligibility = () => {
           <section className="mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-navy">Who Can Apply</h2>
             <p className="text-base sm:text-lg text-gray-700 mb-4">
-              The Melissa & Jason Scholarship is open to students who meet the following criteria:
+              The Melissa Klotz and Jason Pollack Memorial Scholarship is open to every current Brighton High School student, regardless of grade or academic accomplishment.
             </p>
-            <ul className="list-disc pl-6 space-y-3 text-base sm:text-lg text-gray-700 mb-6">
-              <li>Current high school seniors graduating from Brighton High School</li>
-              <li>Planning to enroll in an accredited college, university, or trade school</li>
-              <li>Demonstrated financial need (preferred but not required)</li>
-              <li>Legal residents of the United States</li>
-            </ul>
+            <p className="text-base sm:text-lg text-gray-700 mb-6">
+              This scholarship is unique in that it focuses on character and personal qualities rather than traditional academic metrics. We are looking for students who embody the kindness, strength, and spark that defined Melissa and Jason.
+            </p>
           </section>
 
           <section className="mb-8 sm:mb-12">
@@ -63,25 +60,30 @@ const Eligibility = () => {
           <section>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-navy">Selection Considerations</h2>
             <p className="text-base sm:text-lg text-gray-700 mb-4">
-              Recipients are selected based on a comprehensive review that considers:
+              Recipients are selected based on characteristics that embody what we remember about Melissa and Jason:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-                <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-navy">Academic Excellence</h3>
-                <p className="text-sm sm:text-base text-gray-700">Strong GPA and academic achievements</p>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-navy">Kindness & Caring</h3>
+                <p className="text-sm sm:text-base text-gray-700">Demonstrating the kindness and caring nature that defined Melissa and Jason</p>
               </div>
               <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-                <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-navy">Leadership</h3>
-                <p className="text-sm sm:text-base text-gray-700">Demonstrated leadership in school or community</p>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-navy">Friendship & Family</h3>
+                <p className="text-sm sm:text-base text-gray-700">Valuing friendship and family connections</p>
               </div>
               <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-                <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-navy">Community Service</h3>
-                <p className="text-sm sm:text-base text-gray-700">Commitment to serving others</p>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-navy">Arts, Music & Athletics</h3>
+                <p className="text-sm sm:text-base text-gray-700">Passion for arts, music, or athletics like Melissa and Jason</p>
               </div>
               <div className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-                <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-navy">Character</h3>
-                <p className="text-sm sm:text-base text-gray-700">Personal integrity and moral character</p>
+                <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-navy">Personal Perseverance</h3>
+                <p className="text-sm sm:text-base text-gray-700">Demonstrating personal perseverance and characteristics that make them memorable</p>
               </div>
+            </div>
+            <div className="mt-6 bg-light-gray p-6 sm:p-8 rounded-lg">
+              <p className="text-base sm:text-lg text-gray-700 mb-4">
+                <strong>Nominations:</strong> If you would like to nominate yourself or someone else, please contact Matt Comeau at <a href="mailto:Matt_Comeau@bcsd.org" className="text-gold hover:text-gold/80 font-semibold">Matt_Comeau@bcsd.org</a>.
+              </p>
             </div>
           </section>
         </div>

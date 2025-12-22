@@ -15,20 +15,40 @@ const Home = () => {
       
       <section className="py-8 sm:py-12 md:py-16 px-4">
         <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center">About the Scholarship</h2>
-            <p className="text-base sm:text-lg text-gray-700 mb-4">
-              The Melissa & Jason Scholarship Fund was established to honor the memory of two 
-              extraordinary individuals who believed deeply in the power of education to transform 
-              lives. Our mission is to honor the lives of Melissa Klotz and Jason Pollack by supporting Brighton High School students who embody the kindness, strength, and spark that defined them. Through this scholarship, we carry their light forward and help the next generation thrive in the community they loved.
-            </p>
-            <div className="text-center">
-              <Link
-                to="/about"
-                className="inline-block bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy/90 transition-colors text-base sm:text-lg"
-              >
-                Learn More About Us
-              </Link>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-6">
+              <div className="flex flex-col justify-center">
+                <p className="text-base sm:text-lg text-gray-700 mb-4">
+                  The Melissa & Jason Scholarship Fund was established to honor the memory of two 
+                  extraordinary individuals who believed deeply in the power of education to transform 
+                  lives. Our mission is to honor the lives of Melissa Klotz and Jason Pollack by supporting Brighton High School students who embody the kindness, strength, and spark that defined them. Through this scholarship, we carry their light forward and help the next generation thrive in the community they loved.
+                </p>
+                <div className="text-center md:text-left">
+                  <Link
+                    to="/about"
+                    className="inline-block bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy/90 transition-colors text-base sm:text-lg"
+                  >
+                    Learn More About Us
+                  </Link>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="rounded-lg overflow-hidden shadow-md">
+                  <img 
+                    src="/image1.png" 
+                    alt="Melissa and Jason" 
+                    className="w-full h-48 sm:h-56 object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="rounded-lg overflow-hidden shadow-md">
+                  <img 
+                    src="/image2.png" 
+                    alt="Melissa and Jason" 
+                    className="w-full h-48 sm:h-56 object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

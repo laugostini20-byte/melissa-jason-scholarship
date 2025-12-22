@@ -32,6 +32,29 @@ const About = () => {
 
           <section className="mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-navy">Remembering Melissa & Jason</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-6">
+              <div className="rounded-lg overflow-hidden shadow-md">
+                <img 
+                  src="/image1.png" 
+                  alt="Melissa and Jason" 
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-md">
+                <img 
+                  src="/image2.png" 
+                  alt="Melissa and Jason" 
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-md">
+                <img 
+                  src="/image3.png" 
+                  alt="Melissa and Jason" 
+                  className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            </div>
             <p className="text-base sm:text-lg text-gray-700 mb-4">
               Melissa and Jason are remembered as kind, caring, and particularly funny. They loved nothing more than laughing with friends and family. Melissa excelled in the arts and music, while Jason was a dedicated athlete who played multiple sports.
             </p>

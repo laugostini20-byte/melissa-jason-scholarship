@@ -9,6 +9,7 @@ export interface Event {
   title: string;
   date: string;
   description: string;
+  link?: string;
 }
 
 export interface FAQItem {

@@ -68,12 +68,24 @@ const Home = () => {
                 })}
               </p>
               <p className="text-gray-700">{upcomingEvent.description}</p>
-              <Link
-                to="/events"
-                className="inline-block mt-4 text-gold hover:text-gold/80 font-semibold"
-              >
-                View All Events →
-              </Link>
+              <div className="mt-4 flex flex-wrap gap-4">
+                {upcomingEvent.link && (
+                  <a
+                    href={upcomingEvent.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-gold hover:text-gold/80 font-semibold"
+                  >
+                    Read article →
+                  </a>
+                )}
+                <Link
+                  to="/events"
+                  className="inline-block text-gold hover:text-gold/80 font-semibold"
+                >
+                  View All Events →
+                </Link>
+              </div>
             </div>
           </div>
         </section>

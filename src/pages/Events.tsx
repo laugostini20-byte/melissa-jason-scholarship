@@ -37,6 +37,16 @@ const Events = () => {
                   </span>
                 </div>
                 <p className="text-base sm:text-lg text-gray-700">{event.description}</p>
+                {event.link && (
+                  <a
+                    href={event.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-4 text-gold hover:text-gold/80 font-semibold"
+                  >
+                    Read article →
+                  </a>
+                )}
               </div>
             ))
           )}

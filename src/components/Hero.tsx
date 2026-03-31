@@ -14,10 +14,12 @@ const Hero = () => {
           src="/shannon.jpg"
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover object-center scale-105"
+          className="absolute inset-0 w-full h-full object-cover object-right md:object-center scale-105"
         />
-        {/* Dark navy overlay — gradient for depth */}
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/40" />
+        {/* Mobile: gradient from bottom so text is readable, image visible at top */}
+        <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/80 to-navy/30 md:hidden" />
+        {/* Desktop: gradient left-to-right */}
+        <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-navy/95 via-navy/80 to-navy/40" />
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 py-24">

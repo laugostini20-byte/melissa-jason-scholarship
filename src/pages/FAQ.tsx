@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import PageHeader from '../components/PageHeader';
 import faqsData from '../data/faqs.json';
 import type { FAQItem } from '../types';
@@ -47,12 +48,12 @@ const FAQ = () => {
             <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6">
               If you can't find the answer you're looking for, please don't hesitate to reach out to us.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-block bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy/90 transition-colors text-sm sm:text-base"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>

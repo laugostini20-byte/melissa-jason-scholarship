@@ -11,13 +11,7 @@ const Hero = () => {
           Supporting outstanding students at Brighton High School through annual scholarships
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-          <Link
-            to="/apply"
-            className="bg-gold text-navy px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gold/90 transition-colors text-base sm:text-lg"
-          >
-            Apply Now
-          </Link>
-          <Link
+<Link
             to="/about"
             className="bg-transparent border-2 border-white text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-navy transition-colors text-base sm:text-lg"
           >

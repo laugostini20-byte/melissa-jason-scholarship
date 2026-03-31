@@ -4,7 +4,6 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Eligibility from './pages/Eligibility';
-import Apply from './pages/Apply';
 import Donate from './pages/Donate';
 import Recipients from './pages/Recipients';
 import Events from './pages/Events';
@@ -22,7 +21,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/eligibility" element={<Eligibility />} />
-            <Route path="/apply" element={<Apply />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/recipients" element={<Recipients />} />
             <Route path="/donors" element={<Donors />} />

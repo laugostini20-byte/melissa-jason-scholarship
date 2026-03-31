@@ -48,7 +48,6 @@ const Header = () => {
                 <Link to="/" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>Home</Link>
                 <Link to="/about" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>About</Link>
                 <Link to="/eligibility" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>Eligibility</Link>
-                <Link to="/apply" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>Apply</Link>
                 <Link to="/donate" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>Donate</Link>
                 <Link to="/recipients" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>Recipients</Link>
                 <Link to="/donors" className="py-3 md:py-2 hover:text-gold transition-colors touch-target flex items-center" onClick={closeMenu}>Donors</Link>

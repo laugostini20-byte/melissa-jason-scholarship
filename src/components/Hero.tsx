@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
 const stats = [
-  { value: '1997', label: 'Established' },
   { value: 'Brighton', label: 'High School' },
   { value: 'Annual', label: 'Scholarship Award' },
 ];
@@ -12,7 +11,7 @@ const Hero = () => {
       <section className="relative min-h-[88vh] flex items-center overflow-hidden">
         {/* Background photo */}
         <img
-          src="/image1.png"
+          src="/shannon.jpg"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover object-center scale-105"
@@ -58,7 +57,7 @@ const Hero = () => {
       {/* Stats strip */}
       <div className="bg-navy border-y border-gold/20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-3 divide-x divide-gold/20">
+          <div className="grid grid-cols-2 divide-x divide-gold/20 max-w-sm mx-auto">
             {stats.map(({ value, label }) => (
               <div key={label} className="py-5 text-center">
                 <div className="text-gold font-bold text-xl sm:text-2xl">{value}</div>

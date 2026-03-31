@@ -134,18 +134,8 @@ const Home = () => {
             We are grateful to our generous donors who make these scholarships possible. 
             Their support helps students achieve their educational dreams.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
-            {topDonors && topDonors.length > 0 ? (
-              topDonors.map((donor, index) => (
-                <div key={index} className="bg-light-gray p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                  <h3 className="text-lg sm:text-xl font-semibold text-navy mb-2">{donor.name}</h3>
-                  <p className="text-sm sm:text-base text-gold font-semibold mb-3">{donor.amount}</p>
-                  <p className="text-sm sm:text-base text-gray-700">{donor.description}</p>
-                </div>
-              ))
-            ) : (
-              <p className="text-gray-600 col-span-full text-center">No donors to display at this time.</p>
-            )}
+          <div className="mb-6 sm:mb-8">
+            <p className="text-gray-500 text-center text-base sm:text-lg">Donor recognition coming soon.</p>
           </div>
           <div className="text-center">
             <Link

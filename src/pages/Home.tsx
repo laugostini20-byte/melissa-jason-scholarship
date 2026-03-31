@@ -8,79 +8,55 @@ const Home = () => {
   const upcomingEvent = eventsData[0];
 
   return (
-    <div>
+    <div className="bg-light-gray">
       <Hero />
-      
-      <section className="py-8 sm:py-12 md:py-16 px-4">
-        <div className="container mx-auto">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center">About the Scholarship</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 mb-6">
-              <div className="flex flex-col justify-center">
-                <p className="text-base sm:text-lg text-gray-700 mb-4">
-                  The Melissa & Jason Scholarship Fund was established to honor the memory of two 
-                  extraordinary individuals who believed deeply in the power of education to transform 
-                  lives. Our mission is to honor the lives of Melissa Klotz and Jason Pollack by supporting Brighton High School students who embody the kindness, strength, and spark that defined them. Through this scholarship, we carry their light forward and help the next generation thrive in the community they loved.
-                </p>
-                <div className="text-center md:text-left">
-                  <Link
-                    to="/about"
-                    className="inline-block bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy/90 transition-colors text-base sm:text-lg"
-                  >
-                    Learn More About Us
-                  </Link>
-                </div>
+
+      {/* About section */}
+      <section className="py-16 md:py-24 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="grid grid-cols-2 gap-3">
+              <div className="rounded-2xl overflow-hidden shadow-lg aspect-square">
+                <img src="/image2.png" alt="Melissa and Jason" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
-              <div className="grid grid-cols-2 gap-4 self-start">
-                <div className="rounded-lg overflow-hidden shadow-md aspect-square">
-                  <img 
-                    src="/image1.png" 
-                    alt="Melissa and Jason" 
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="rounded-lg overflow-hidden shadow-md aspect-square">
-                  <img 
-                    src="/image4.png" 
-                    alt="Melissa and Jason" 
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
+              <div className="rounded-2xl overflow-hidden shadow-lg aspect-square mt-6">
+                <img src="/image4.png" alt="Melissa and Jason" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
+            </div>
+            <div>
+              <div className="w-10 h-1 bg-gold mb-5 rounded-full" />
+              <h2 className="text-3xl sm:text-4xl font-bold text-navy mb-5 leading-tight">About the Scholarship</h2>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Established in honor of Melissa Klotz and Jason Pollack, this scholarship supports Brighton High School students who embody the kindness, strength, and spark that defined them. Through this scholarship, we carry their light forward and help the next generation thrive in the community they loved.
+              </p>
+              <Link to="/about" className="inline-block bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy/90 transition-colors">
+                Our Story
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Upcoming Event */}
       {upcomingEvent && (
-        <section className="py-8 sm:py-12 md:py-16 px-4 bg-white">
-          <div className="container mx-auto">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">Upcoming Event</h2>
-            <div className="max-w-2xl mx-auto bg-light-gray p-6 sm:p-8 rounded-lg">
-              <h3 className="text-xl sm:text-2xl font-semibold mb-3 text-navy">{upcomingEvent.title}</h3>
-              <p className="text-gray-600 mb-2">
-                <strong>Date:</strong> {new Date(upcomingEvent.date).toLocaleDateString('en-US', {
-                  year: 'numeric',
-                  month: 'long',
-                  day: 'numeric'
-                })}
+        <section className="py-16 md:py-20 px-4 bg-navy text-white">
+          <div className="container mx-auto max-w-3xl text-center">
+            <div className="w-10 h-1 bg-gold mb-5 rounded-full mx-auto" />
+            <h2 className="text-3xl sm:text-4xl font-bold mb-8">Upcoming Event</h2>
+            <div className="bg-white/10 backdrop-blur rounded-2xl p-8 text-left">
+              <p className="text-gold text-sm font-semibold uppercase tracking-wider mb-2">
+                {new Date(upcomingEvent.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
               </p>
-              <p className="text-gray-700">{upcomingEvent.description}</p>
-              <div className="mt-4 flex flex-wrap gap-4">
+              <h3 className="text-xl sm:text-2xl font-bold mb-3">{upcomingEvent.title}</h3>
+              <p className="text-gray-300 leading-relaxed mb-6">{upcomingEvent.description}</p>
+              <div className="flex flex-wrap gap-4">
                 {upcomingEvent.link && (
-                  <a
-                    href={upcomingEvent.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block text-gold hover:text-gold/80 font-semibold"
-                  >
+                  <a href={upcomingEvent.link} target="_blank" rel="noopener noreferrer"
+                    className="text-gold hover:text-gold/80 font-semibold">
                     Read article →
                   </a>
                 )}
-                <Link
-                  to="/events"
-                  className="inline-block text-gold hover:text-gold/80 font-semibold"
-                >
+                <Link to="/events" className="text-gold hover:text-gold/80 font-semibold">
                   View All Events →
                 </Link>
               </div>
@@ -89,94 +65,54 @@ const Home = () => {
         </section>
       )}
 
-      <section className="py-8 sm:py-12 md:py-16 px-4">
-        <div className="container mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">Past Recipients</h2>
-          <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mb-6 sm:mb-8">
+      {/* Recipients */}
+      <section className="py-16 md:py-24 px-4">
+        <div className="container mx-auto max-w-5xl">
+          <div className="text-center mb-12">
+            <div className="w-10 h-1 bg-gold mb-5 rounded-full mx-auto" />
+            <h2 className="text-3xl sm:text-4xl font-bold text-navy">2025 Recipients</h2>
+          </div>
+          <div className="flex flex-wrap justify-center gap-8 mb-10">
             {recentRecipients.map((recipient, index) => (
-              <div key={index} className="bg-white p-4 sm:p-6 rounded-lg shadow-md w-full md:w-72">
-                <div className="h-40 sm:h-48 rounded mb-4 overflow-hidden bg-gray-200">
+              <div key={index} className="bg-white rounded-2xl shadow-md overflow-hidden w-full md:w-72 group">
+                <div className="h-56 overflow-hidden bg-gray-100">
                   {recipient.photo && recipient.photo !== '/placeholder.jpg' ? (
-                    <img
-                      src={recipient.photo}
-                      alt={recipient.name}
-                      className="w-full h-full object-cover"
-                    />
+                    <img src={recipient.photo} alt={recipient.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   ) : (
-                    <div className="w-full h-full flex items-center justify-center">
-                      <span className="text-gray-400 text-sm sm:text-base">Photo</span>
-                    </div>
+                    <div className="w-full h-full flex items-center justify-center text-gray-400">Photo</div>
                   )}
                 </div>
-                <h3 className="text-lg sm:text-xl font-semibold mb-2 text-navy">{recipient.name}</h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-2">Class of {recipient.year}</p>
-                <p className="text-sm sm:text-base text-gray-700">{recipient.description}</p>
+                <div className="p-5 border-t-2 border-gold">
+                  <h3 className="text-lg font-bold text-navy">{recipient.name}</h3>
+                  <p className="text-sm text-gold font-semibold mb-1">Class of {recipient.year}</p>
+                  <p className="text-sm text-gray-600">{recipient.description}</p>
+                </div>
               </div>
             ))}
           </div>
           <div className="text-center">
-            <Link
-              to="/recipients"
-              className="inline-block bg-gold text-navy px-6 py-3 rounded-lg font-semibold hover:bg-gold/90 transition-colors text-base sm:text-lg"
-            >
+            <Link to="/recipients" className="inline-block border-2 border-navy text-navy px-6 py-3 rounded-lg font-semibold hover:bg-navy hover:text-white transition-colors">
               View All Recipients
             </Link>
           </div>
         </div>
       </section>
 
-      <section className="py-8 sm:py-12 md:py-16 px-4 bg-white">
-        <div className="container mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">Our Top Donors</h2>
-          <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8 text-center max-w-3xl mx-auto px-4">
-            We are grateful to our generous donors who make these scholarships possible. 
-            Their support helps students achieve their educational dreams.
+      {/* Donate CTA */}
+      <section className="py-16 md:py-20 px-4 bg-white">
+        <div className="container mx-auto max-w-2xl text-center">
+          <div className="w-10 h-1 bg-gold mb-5 rounded-full mx-auto" />
+          <h2 className="text-3xl sm:text-4xl font-bold text-navy mb-4">Support Our Mission</h2>
+          <p className="text-gray-600 mb-8 leading-relaxed">
+            Your donation helps us provide scholarships to deserving Brighton students. Every contribution makes a meaningful difference.
           </p>
-          <div className="mb-6 sm:mb-8">
-            <p className="text-gray-500 text-center text-base sm:text-lg">Donor recognition coming soon.</p>
+          <div className="bg-light-gray rounded-2xl p-8 mb-8 inline-block">
+            <img src="/qr-code.png" alt="Donation QR Code" className="w-44 h-44 object-contain mx-auto" />
+            <p className="text-sm text-gray-500 mt-3">Scan to donate</p>
           </div>
-          <div className="text-center">
-            <Link
-              to="/donors"
-              className="inline-block bg-gold text-navy px-6 py-3 rounded-lg font-semibold hover:bg-gold/90 transition-colors text-base sm:text-lg mb-4"
-            >
-              View All Donors
-            </Link>
-            <p className="text-sm sm:text-base text-gray-600 mb-4">
-              Want to join our community of supporters?
-            </p>
-            <Link
-              to="/donate"
-              className="inline-block bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy/90 transition-colors text-base sm:text-lg"
-            >
-              Become a Donor
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-8 sm:py-12 md:py-16 px-4 bg-white">
-        <div className="container mx-auto">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Support Our Mission</h2>
-            <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8 px-2">
-              Your donation helps us provide scholarships to deserving students. 
-              Every contribution makes a difference in a student's educational journey.
-            </p>
-            <div className="bg-light-gray p-6 sm:p-8 rounded-lg mb-6">
-              <div className="w-40 h-40 sm:w-48 sm:h-48 mx-auto rounded flex items-center justify-center mb-4">
-                <img 
-                  src="/qr-code.png" 
-                  alt="Donation QR Code" 
-                  className="w-full h-full object-contain rounded"
-                />
-              </div>
-              <p className="text-sm text-gray-600 mb-4">Scan to donate</p>
-            </div>
-            <Link
-              to="/donate"
-              className="inline-block bg-navy text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-navy/90 transition-colors text-base sm:text-lg"
-            >
+          <div>
+            <Link to="/donate" className="inline-block bg-navy text-white px-8 py-3 rounded-lg font-semibold hover:bg-navy/90 transition-colors">
               Donate Now
             </Link>
           </div>
@@ -187,4 +123,3 @@ const Home = () => {
 };
 
 export default Home;
-

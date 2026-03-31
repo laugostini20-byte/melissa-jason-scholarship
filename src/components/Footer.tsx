@@ -1,24 +1,47 @@
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-navy text-white mt-auto">
-      <div className="container mx-auto px-4 py-6 sm:py-8">
-        <div className="flex flex-col md:flex-row md:justify-between md:items-center">
-          <div className="mb-4 md:mb-0">
-            <h3 className="text-lg sm:text-xl font-bold mb-2">Melissa & Jason Scholarship Fund</h3>
-            <p className="text-xs sm:text-sm text-gray-300">
-              Supporting outstanding students at Brighton High School through annual scholarships
+      <div className="h-px bg-gold/30" />
+      <div className="container mx-auto px-4 py-10 sm:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+
+          {/* Brand */}
+          <div className="md:col-span-2">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="w-1 h-7 bg-gold rounded-full" />
+              <h3 className="text-lg font-bold">Melissa &amp; Jason Scholarship Fund</h3>
+            </div>
+            <p className="text-sm text-gray-400 leading-relaxed max-w-sm">
+              Honoring the memory of Melissa Klotz and Jason Pollack by supporting outstanding students at Brighton High School.
             </p>
           </div>
-          <div className="flex flex-col sm:flex-row md:flex-row gap-3 sm:gap-4 text-xs sm:text-sm">
-            <a href="#" className="hover:text-gold transition-colors py-1">Privacy Policy</a>
-            <a href="#" className="hover:text-gold transition-colors py-1">Terms of Service</a>
-            <a href="#" className="hover:text-gold transition-colors py-1">Contact</a>
+
+          {/* Quick links */}
+          <div>
+            <h4 className="text-sm font-semibold text-gold uppercase tracking-wider mb-4">Quick Links</h4>
+            <div className="grid grid-cols-2 gap-y-2 gap-x-4">
+              {[
+                { to: '/about', label: 'About' },
+                { to: '/eligibility', label: 'Eligibility' },
+                { to: '/recipients', label: 'Recipients' },
+                { to: '/donate', label: 'Donate' },
+                { to: '/events', label: 'Events' },
+                { to: '/contact', label: 'Contact' },
+              ].map(({ to, label }) => (
+                <Link key={to} to={to} className="text-sm text-gray-400 hover:text-gold transition-colors">
+                  {label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="border-t border-gray-700 mt-4 sm:mt-6 pt-4 sm:pt-6 text-center text-xs sm:text-sm text-gray-300">
-          <p>&copy; {currentYear} Melissa & Jason Scholarship Fund. All rights reserved.</p>
+
+        <div className="border-t border-white/10 pt-6 text-center text-xs text-gray-500">
+          &copy; {currentYear} Melissa &amp; Jason Scholarship Fund. All rights reserved.
         </div>
       </div>
     </footer>
@@ -26,4 +49,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

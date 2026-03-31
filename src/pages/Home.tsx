@@ -94,11 +94,21 @@ const Home = () => {
       <section className="py-8 sm:py-12 md:py-16 px-4">
         <div className="container mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">Past Recipients</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
+          <div className="flex flex-wrap justify-center gap-6 sm:gap-8 mb-6 sm:mb-8">
             {recentRecipients.map((recipient, index) => (
-              <div key={index} className="bg-white p-4 sm:p-6 rounded-lg shadow-md">
-                <div className="h-40 sm:h-48 bg-gray-200 rounded mb-4 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm sm:text-base">Photo</span>
+              <div key={index} className="bg-white p-4 sm:p-6 rounded-lg shadow-md w-full md:w-72">
+                <div className="h-40 sm:h-48 rounded mb-4 overflow-hidden bg-gray-200">
+                  {recipient.photo && recipient.photo !== '/placeholder.jpg' ? (
+                    <img
+                      src={recipient.photo}
+                      alt={recipient.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <span className="text-gray-400 text-sm sm:text-base">Photo</span>
+                    </div>
+                  )}
                 </div>
                 <h3 className="text-lg sm:text-xl font-semibold mb-2 text-navy">{recipient.name}</h3>
                 <p className="text-sm sm:text-base text-gray-600 mb-2">Class of {recipient.year}</p>

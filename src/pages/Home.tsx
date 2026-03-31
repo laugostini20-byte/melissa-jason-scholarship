@@ -2,12 +2,10 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import recipientsData from '../data/recipients.json';
 import eventsData from '../data/events.json';
-import donorsData from '../data/donors.json';
 
 const Home = () => {
   const recentRecipients = recipientsData.slice(0, 3);
   const upcomingEvent = eventsData[0];
-  const topDonors = donorsData.slice(0, 6);
 
   return (
     <div>

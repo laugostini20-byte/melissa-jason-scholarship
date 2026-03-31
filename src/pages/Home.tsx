@@ -52,12 +52,13 @@ const Home = () => {
 
       {/* Pull quote */}
       <section className="bg-navy py-16 px-4">
-        <div className="container mx-auto max-w-3xl text-center">
-          <div className="text-gold text-5xl font-serif leading-none mb-4">"</div>
-          <blockquote className="text-white text-xl sm:text-2xl font-bold leading-relaxed mb-4">
-            We carry their light forward and help the next generation thrive in the community they loved.
-          </blockquote>
-          <div className="w-12 h-px bg-gold/40 mx-auto" />
+        <div className="container mx-auto max-w-2xl">
+          <div className="border-l-2 border-gold pl-8">
+            <blockquote className="text-white text-xl sm:text-2xl font-semibold leading-relaxed mb-4">
+              We carry their light forward and help the next generation thrive in the community they loved.
+            </blockquote>
+            <p className="text-gold text-sm uppercase tracking-widest font-semibold">— Melissa & Jason Scholarship Fund</p>
+          </div>
         </div>
       </section>
 

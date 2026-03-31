@@ -26,12 +26,12 @@ const Recipients = () => {
       <div className="container mx-auto px-4 py-8 sm:py-12 md:py-16">
         {years.map((year) => (
           <section key={year} className="mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-navy border-b-2 border-gold pb-2">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-navy border-b-2 border-gold pb-2 text-center">
               Class of {year}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
               {recipientsByYear[year].map((recipient, index) => (
-                <div key={index} className="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <div key={index} className="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow w-full md:w-72">
                   <div className="h-48 sm:h-64 rounded mb-4 overflow-hidden bg-gray-200">
                     {recipient.photo && recipient.photo !== '/placeholder.jpg' ? (
                       <img

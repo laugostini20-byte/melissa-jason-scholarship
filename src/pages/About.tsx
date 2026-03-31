@@ -32,25 +32,39 @@ const About = () => {
 
           <section className="mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-navy">Remembering Melissa & Jason</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-6">
-              <div className="flex items-center justify-center h-[400px]">
-                <img 
-                  src="/image2.png" 
-                  alt="Melissa and Jason" 
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6 mb-6">
+              <div className="flex items-center justify-center h-[400px] lg:h-[300px]">
+                <img
+                  src="/image2.png"
+                  alt="Melissa and Jason"
                   className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="flex items-center justify-center h-[400px]">
-                <img 
-                  src="/image4.png" 
-                  alt="Melissa and Jason" 
+              <div className="flex items-center justify-center h-[400px] lg:h-[300px]">
+                <img
+                  src="/image4.png"
+                  alt="Melissa and Jason"
                   className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="flex items-center justify-center h-[400px]">
-                <img 
-                  src="/image5.png" 
-                  alt="Melissa and Jason" 
+              <div className="flex items-center justify-center h-[400px] lg:h-[300px]">
+                <img
+                  src="/image5.png"
+                  alt="Melissa and Jason"
+                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="flex items-center justify-center h-[400px] lg:h-[300px]">
+                <img
+                  src="/melissa1.jpg"
+                  alt="Melissa"
+                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="flex items-center justify-center h-[400px] lg:h-[300px]">
+                <img
+                  src="/melissa2.jpg"
+                  alt="Melissa"
                   className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                 />
               </div>

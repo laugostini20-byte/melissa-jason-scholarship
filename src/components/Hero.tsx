@@ -10,16 +10,17 @@ const Hero = () => {
     <>
       <section className="relative min-h-[88vh] flex items-center overflow-hidden">
         {/* Background photo */}
+        {/* Photo — desktop only, landscape image doesn't crop well on mobile */}
         <img
           src="/shannon.jpg"
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover object-top md:object-center scale-105"
+          className="absolute inset-0 w-full h-full object-cover object-center scale-105 hidden md:block"
         />
-        {/* Mobile: heavy at bottom for text readability, nearly transparent at top to show photo */}
-        <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent md:hidden" />
-        {/* Desktop: gradient left-to-right */}
+        {/* Desktop overlay */}
         <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-navy/95 via-navy/80 to-navy/40" />
+        {/* Mobile: clean navy gradient, no photo */}
+        <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy/90 md:hidden" />
 
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 py-24">

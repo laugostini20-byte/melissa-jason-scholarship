@@ -32,8 +32,18 @@ const Recipients = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {recipientsByYear[year].map((recipient, index) => (
                 <div key={index} className="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                  <div className="h-48 sm:h-64 bg-gray-200 rounded mb-4 flex items-center justify-center">
-                    <span className="text-gray-400 text-sm sm:text-base">Photo</span>
+                  <div className="h-48 sm:h-64 rounded mb-4 overflow-hidden bg-gray-200">
+                    {recipient.photo && recipient.photo !== '/placeholder.jpg' ? (
+                      <img
+                        src={recipient.photo}
+                        alt={recipient.name}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full flex items-center justify-center">
+                        <span className="text-gray-400 text-sm sm:text-base">Photo</span>
+                      </div>
+                    )}
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold mb-2 text-navy">{recipient.name}</h3>
                   <p className="text-sm sm:text-base text-gray-700">{recipient.description}</p>

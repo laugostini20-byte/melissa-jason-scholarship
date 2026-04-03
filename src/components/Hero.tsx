@@ -12,7 +12,7 @@ const Hero = () => {
         {/* Background photo */}
         {/* Photo — desktop only, landscape image doesn't crop well on mobile */}
         <img
-          src="/shannon.jpg"
+          src="/image4.png"
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover object-center scale-105 hidden md:block"

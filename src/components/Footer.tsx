@@ -30,6 +30,7 @@ const Footer = () => {
                 { to: '/recipients', label: 'Recipients' },
                 { to: '/donate', label: 'Donate' },
                 { to: '/events', label: 'Events' },
+                { to: '/get-involved', label: 'Get Involved' },
                 { to: '/contact', label: 'Contact' },
               ].map(({ to, label }) => (
                 <Link key={to} to={to} className="text-sm text-gray-400 hover:text-gold transition-colors">

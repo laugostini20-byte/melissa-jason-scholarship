@@ -86,7 +86,7 @@ const About = () => {
               Students who demonstrate these characteristics are those who will remain memorable long after they leave the halls of Brighton High School.
             </p>
             <p className="text-base sm:text-lg text-gray-700">
-              If you would like to nominate yourself or someone else, please contact Matt Comeau at <a href="mailto:Matt_Comeau@bcsd.org" className="text-gold hover:text-gold/80 font-semibold">Matt_Comeau@bcsd.org</a>.
+              If you would like to nominate yourself or someone else, please reach out to us directly at <a href="mailto:melissaandjasonaward@gmail.com" className="text-gold hover:text-gold/80 font-semibold">melissaandjasonaward@gmail.com</a>.
             </p>
           </section>
         </div>

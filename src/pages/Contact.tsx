@@ -13,10 +13,10 @@ const Contact = () => {
           <h2 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-navy">Get in Touch</h2>
           <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8">
             Have a question about the scholarship? Want to learn more about how you can
-            get involved or explore donation options? Reach out to Matt Comeau directly.
+            get involved or explore donation options? Reach out to us directly.
           </p>
-          <a href="mailto:Matt_Comeau@bcsd.org" className="text-base sm:text-lg text-gold hover:text-gold/80 font-semibold">
-            Matt_Comeau@bcsd.org
+          <a href="mailto:melissaandjasonaward@gmail.com" className="text-base sm:text-lg text-gold hover:text-gold/80 font-semibold">
+            melissaandjasonaward@gmail.com
           </a>
         </div>
       </div>

@@ -82,7 +82,7 @@ const Eligibility = () => {
             </div>
             <div className="mt-6 bg-light-gray p-6 sm:p-8 rounded-lg">
               <p className="text-base sm:text-lg text-gray-700 mb-4">
-                <strong>Nominations:</strong> If you would like to nominate yourself or someone else, please contact Matt Comeau at <a href="mailto:Matt_Comeau@bcsd.org" className="text-gold hover:text-gold/80 font-semibold">Matt_Comeau@bcsd.org</a>.
+                <strong>Nominations:</strong> If you would like to nominate yourself or someone else, please reach out to us directly at <a href="mailto:melissaandjasonaward@gmail.com" className="text-gold hover:text-gold/80 font-semibold">melissaandjasonaward@gmail.com</a>.
               </p>
             </div>
           </section>

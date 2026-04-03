@@ -15,7 +15,7 @@ const Hero = () => {
           src="/image4.png"
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover object-bottom scale-105 hidden md:block"
+          className="absolute inset-0 w-full h-full object-cover object-top scale-105 hidden md:block"
         />
         {/* Desktop overlay */}
         <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-navy/95 via-navy/80 to-navy/40" />

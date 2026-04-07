@@ -29,9 +29,9 @@ const Recipients = () => {
             <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-navy border-b-2 border-gold pb-2 text-center">
               Class of {year}
             </h2>
-            <div className="flex flex-col items-center gap-6 sm:gap-8 w-full">
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-8 w-full">
               {recipientsByYear[year].map((recipient, index) => (
-                <div key={index} className="w-full max-w-3xl rounded-lg shadow-md overflow-hidden">
+                <div key={index} className="rounded-lg shadow-md overflow-hidden w-full md:w-[calc(50%-1rem)]">
                   {recipient.photo && recipient.photo !== '/placeholder.jpg' ? (
                     <img
                       src={recipient.photo}

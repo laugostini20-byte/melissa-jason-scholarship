@@ -120,21 +120,12 @@ const Home = () => {
           </div>
           <div className="flex flex-wrap justify-center gap-8">
             {recentRecipients.map((recipient, index) => (
-              <div key={index} className="bg-light-gray rounded-2xl overflow-hidden w-full md:w-72 group hover:shadow-xl transition-shadow duration-300">
-                <div className="h-64 overflow-hidden bg-gray-200 relative">
-                  {recipient.photo && recipient.photo !== '/placeholder.jpg' ? (
-                    <img src={recipient.photo} alt={recipient.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center text-gray-400">Photo</div>
-                  )}
-                  <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-black/40 to-transparent" />
-                </div>
-                <div className="p-5">
-                  <div className="w-8 h-0.5 bg-gold mb-3 rounded-full" />
-                  <h3 className="text-lg font-bold text-navy">{recipient.name}</h3>
-                  <p className="text-sm text-gold font-semibold mt-0.5">{recipient.description}</p>
-                </div>
+              <div key={index} className="rounded-2xl overflow-hidden shadow-md w-full md:w-[calc(50%-1rem)]">
+                {recipient.photo && recipient.photo !== '/placeholder.jpg' ? (
+                  <img src={recipient.photo} alt={recipient.name} className="w-full h-auto" />
+                ) : (
+                  <div className="bg-gray-200 flex items-center justify-center h-48 text-gray-400">{recipient.name}</div>
+                )}
               </div>
             ))}
           </div>

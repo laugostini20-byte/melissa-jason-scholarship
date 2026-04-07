@@ -29,24 +29,20 @@ const Recipients = () => {
             <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-navy border-b-2 border-gold pb-2 text-center">
               Class of {year}
             </h2>
-            <div className="flex flex-wrap justify-center gap-6 sm:gap-8">
+            <div className="flex flex-col items-center gap-6 sm:gap-8 w-full">
               {recipientsByYear[year].map((recipient, index) => (
-                <div key={index} className="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow w-full md:w-72">
-                  <div className="h-48 sm:h-64 rounded mb-4 overflow-hidden bg-gray-200">
-                    {recipient.photo && recipient.photo !== '/placeholder.jpg' ? (
-                      <img
-                        src={recipient.photo}
-                        alt={recipient.name}
-                        className="w-full h-full object-cover"
-                      />
-                    ) : (
-                      <div className="w-full h-full flex items-center justify-center">
-                        <span className="text-gray-400 text-sm sm:text-base">Photo</span>
-                      </div>
-                    )}
-                  </div>
-                  <h3 className="text-lg sm:text-xl font-semibold mb-2 text-navy">{recipient.name}</h3>
-                  <p className="text-sm sm:text-base text-gray-700">{recipient.description}</p>
+                <div key={index} className="w-full max-w-3xl rounded-lg shadow-md overflow-hidden">
+                  {recipient.photo && recipient.photo !== '/placeholder.jpg' ? (
+                    <img
+                      src={recipient.photo}
+                      alt={recipient.name}
+                      className="w-full h-auto"
+                    />
+                  ) : (
+                    <div className="bg-gray-200 flex items-center justify-center h-48">
+                      <span className="text-gray-400">{recipient.name}</span>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

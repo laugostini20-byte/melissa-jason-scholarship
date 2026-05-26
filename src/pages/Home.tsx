@@ -2,10 +2,11 @@ import { Link } from 'react-router-dom';
 import Hero from '../components/Hero';
 import recipientsData from '../data/recipients.json';
 import eventsData from '../data/events.json';
+import type { Event } from '../types';
 
 const Home = () => {
   const recentRecipients = recipientsData.slice(0, 3);
-  const upcomingEvent = eventsData[0];
+  const upcomingEvent = (eventsData as Event[])[0];
 
   return (
     <div className="bg-light-gray">

@@ -9,12 +9,6 @@ const ways = [
     icon: '🎉',
   },
   {
-    title: 'Personal Connections',
-    description:
-      'Know someone who embodies the spirit of Melissa and Jason? Nominate them for the scholarship, or simply spread the word to families, students, and teachers in the Brighton community.',
-    icon: '🤝',
-  },
-  {
     title: 'Business & Corporate Outreach',
     description:
       'Businesses and organizations can make a lasting impact through sponsorships, matching gift programs, or direct donations. We welcome partnerships of any size.',
@@ -25,6 +19,12 @@ const ways = [
     description:
       'Every contribution — large or small — goes directly toward supporting a deserving Brighton High School student. Scan the QR code on our Donate page or reach out to learn more.',
     icon: '💛',
+  },
+  {
+    title: 'Join the Committee',
+    description:
+      'Want to be more involved? We\'re growing our Memorial Scholarship Committee and looking for individuals interested in helping with fundraising, social media, events, and community outreach as we continue supporting Brighton students.',
+    icon: '⭐',
   },
 ];
 

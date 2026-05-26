@@ -1,19 +1,14 @@
 [
   {
-    "title": "D&C Article: How teen train tragedy in 1997 left Brighton changed for decades",
-    "date": "2026-02-12",
-    "description": "Democrat & Chronicle feature highlighting the scholarship story and its impact on students, past recipients, and the mission of the scholarship fund.",
-    "link": "https://www.democratandchronicle.com/story/news/local/communities/brighton/2026/02/12/how-teen-train-tragedy-in-1997-left-brighton-changed-for-decades/85258879007/"
-  },
-  {
     "title": "Annual Scholarship Awards Ceremony",
-    "date": "2025-06-15",
-    "description": "Join us as we celebrate this year's scholarship recipients. The ceremony will recognize outstanding students and honor the legacy of Melissa & Jason."
+    "date": "2026-06-15",
+    "description": "Join us as we celebrate this year's scholarship recipients. The ceremony will recognize outstanding students and honor the legacy of Melissa & Jason.",
+    "comingSoon": true
   },
   {
     "title": "Community Fundraiser Event",
-    "date": "2025-04-20",
-    "description": "A community gathering to raise funds for next year's scholarships. The event will feature local speakers, student presentations, and opportunities to connect with the scholarship community."
+    "date": "2026-04-20",
+    "description": "A community gathering to raise funds for next year's scholarships. The event will feature local speakers, student presentations, and opportunities to connect with the scholarship community.",
+    "comingSoon": true
   }
 ]
-

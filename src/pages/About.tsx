@@ -77,7 +77,7 @@ const About = () => {
             </p>
           </section>
 
-          <section>
+          <section className="mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-navy">Scholarship Purpose</h2>
             <p className="text-base sm:text-lg text-gray-700 mb-4">
               This scholarship is open to all current Brighton High School students, regardless of grade level or academic achievement. Rather than focusing on academics alone, the scholarship is awarded to an individual who embodies the qualities so fondly remembered in Melissa and Jason—kindness, friendship, family values, a love of the arts, music, or athletics, and personal perseverance.
@@ -86,8 +86,29 @@ const About = () => {
               Students who demonstrate these characteristics are those who will remain memorable long after they leave the halls of Brighton High School.
             </p>
             <p className="text-base sm:text-lg text-gray-700">
-              If you would like to nominate yourself or someone else, please reach out to us directly at <a href="mailto:melissaandjasonaward@gmail.com" className="text-gold hover:text-gold/80 font-semibold">melissaandjasonaward@gmail.com</a>.
+              If you would like to nominate someone, please reach out to us directly at <a href="mailto:melissaandjasonaward@gmail.com" className="text-gold hover:text-gold/80 font-semibold">melissaandjasonaward@gmail.com</a>.
             </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-navy">In the News</h2>
+            <div className="bg-white rounded-xl shadow-md p-6 sm:p-8 border-l-4 border-gold">
+              <p className="text-xs font-semibold text-gold uppercase tracking-widest mb-2">Democrat &amp; Chronicle · February 12, 2026</p>
+              <h3 className="text-lg sm:text-xl font-bold text-navy mb-3">
+                How teen train tragedy in 1997 left Brighton changed for decades
+              </h3>
+              <p className="text-base text-gray-700 mb-4">
+                Democrat &amp; Chronicle feature highlighting the scholarship story and its impact on students, past recipients, and the mission of the scholarship fund.
+              </p>
+              <a
+                href="https://www.democratandchronicle.com/story/news/local/communities/brighton/2026/02/12/how-teen-train-tragedy-in-1997-left-brighton-changed-for-decades/85258879007/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-gold hover:text-gold/80 font-semibold text-sm"
+              >
+                Read the article →
+              </a>
+            </div>
           </section>
         </div>
       </div>

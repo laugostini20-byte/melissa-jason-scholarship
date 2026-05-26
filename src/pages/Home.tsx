@@ -15,16 +15,9 @@ const Home = () => {
       <section className="py-20 md:py-28 px-4">
         <div className="container mx-auto max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
-            {/* Staggered photos */}
-            <div className="relative h-80 sm:h-96">
-              <div className="absolute top-0 left-0 w-3/4 h-3/4 rounded-2xl overflow-hidden shadow-xl">
-                <img src="/image2.png" alt="Melissa and Jason" className="w-full h-full object-cover" />
-              </div>
-              <div className="absolute bottom-0 right-0 w-2/3 h-2/3 rounded-2xl overflow-hidden shadow-xl border-4 border-light-gray">
-                <img src="/image4.png" alt="Melissa and Jason" className="w-full h-full object-cover" />
-              </div>
-              {/* Gold accent dot */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-gold shadow-lg shadow-gold/40" />
+            {/* Photo */}
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img src="/image4.png" alt="Melissa and Jason" className="w-full h-full object-cover" />
             </div>
 
             <div>

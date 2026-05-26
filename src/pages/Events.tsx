@@ -32,9 +32,17 @@ const Events = () => {
               <div key={index} className="bg-white p-6 sm:p-8 rounded-lg shadow-md">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <h2 className="text-xl sm:text-2xl font-bold text-navy mb-2 md:mb-0">{event.title}</h2>
-                  <span className="text-gold font-semibold whitespace-nowrap text-sm sm:text-base">
-                    {formatDate(event.date)}
-                  </span>
+                  <div className="flex items-center gap-3">
+                    {event.comingSoon ? (
+                      <span className="bg-gold/10 text-gold border border-gold/30 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+                        Coming Soon
+                      </span>
+                    ) : (
+                      <span className="text-gold font-semibold whitespace-nowrap text-sm sm:text-base">
+                        {formatDate(event.date)}
+                      </span>
+                    )}
+                  </div>
                 </div>
                 <p className="text-base sm:text-lg text-gray-700">{event.description}</p>
                 {event.link && (

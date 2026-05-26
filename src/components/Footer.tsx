@@ -26,7 +26,6 @@ const Footer = () => {
             <div className="grid grid-cols-2 gap-y-3 gap-x-4">
               {[
                 { to: '/about', label: 'About' },
-                { to: '/eligibility', label: 'Eligibility' },
                 { to: '/recipients', label: 'Recipients' },
                 { to: '/donate', label: 'Donate' },
                 { to: '/events', label: 'Events' },

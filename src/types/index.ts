@@ -10,6 +10,7 @@ export interface Event {
   date: string;
   description: string;
   link?: string;
+  comingSoon?: boolean;
 }
 
 export interface FAQItem {

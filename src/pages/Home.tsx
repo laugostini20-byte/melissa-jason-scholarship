@@ -5,7 +5,8 @@ import eventsData from '../data/events.json';
 import type { Event } from '../types';
 
 const Home = () => {
-  const recentRecipients = recipientsData.slice(0, 3);
+  const latestYear = Math.max(...recipientsData.map((r) => r.year));
+  const recentRecipients = recipientsData.filter((r) => r.year === latestYear);
   const upcomingEvent = (eventsData as Event[])[0];
 
   return (
@@ -104,7 +105,7 @@ const Home = () => {
             <div>
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-8 h-px bg-gold" />
-                <span className="text-gold text-xs font-semibold uppercase tracking-widest">Class of 2025</span>
+                <span className="text-gold text-xs font-semibold uppercase tracking-widest">Class of {latestYear}</span>
               </div>
               <h2 className="text-4xl font-bold text-navy">This Year's Recipients</h2>
             </div>

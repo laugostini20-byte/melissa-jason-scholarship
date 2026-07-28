@@ -1,5 +1,17 @@
 [
   {
+    "name": "Brandon Kemp",
+    "year": 2026,
+    "description": "Football, Indoor Track & Field, and Outdoor Track & Field. Plans to attend SUNY Oswego.",
+    "photo": "/brandon.png"
+  },
+  {
+    "name": "Meaghan Mullin",
+    "year": 2026,
+    "description": "Cheerleading. Plans to attend MCC.",
+    "photo": "/meaghan.png"
+  },
+  {
     "name": "Kaleb Matthews",
     "year": 2025,
     "description": "Brighton Varsity Football, Basketball, and Track & Field. Plans to attend SUNY Cortland.",
